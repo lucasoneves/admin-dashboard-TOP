@@ -1,8 +1,19 @@
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue-primary: #1992d4;
+  --blue-darken: #0f5981;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -19,10 +30,20 @@ body {
 }
 
 .sidebar-menu {
-  background: #1992d4;
+  background: var(--blue-primary);
   color: white;
+  padding: 20px;
 }
 
 .sidebar-menu a {
   color: inherit;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-menu a:hover {
+  background: var(--blue-darken);
 }

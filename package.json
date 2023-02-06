@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.27.11"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }
