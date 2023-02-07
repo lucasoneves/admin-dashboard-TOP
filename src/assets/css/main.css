@@ -26,7 +26,7 @@ body {
 
 .main-content {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 300px calc(100% - 300px));
 }
 
 .sidebar-menu {
@@ -46,4 +46,23 @@ body {
 
 .sidebar-menu a:hover {
   background: var(--blue-darken);
+}
+
+.main-header {
+  background-color: #fff;
+}
+
+.main-header--section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.main-header .search {
+  flex: 3;
+}
+.btn-baseblue {
+  background-color: var(--blue-primary);
+  color: #fff;
 }
