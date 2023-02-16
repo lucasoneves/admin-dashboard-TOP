@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +23,9 @@ body {
 }
 
 .main-content {
-    display: grid;
-    grid-template-columns: repeat(2, 300px calc(100% - 300px));
+  display: grid;
+  grid-template-columns: repeat(2, 300px calc(100% - 300px));
+  height: 100vh;
 }
 
 .sidebar-menu {
@@ -65,4 +64,63 @@ body {
 .btn-baseblue {
   background-color: var(--blue-primary);
   color: #fff;
+}
+
+.btn-baseblue:hover {
+  background-color: var(--blue-darken);
+}
+
+.content-cards {
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+
+.main-title {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.main-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  font-size: 16px;
+}
+
+.main-card.bordered {
+  border-left: 10px solid #efb122;
+}
+
+.main-card__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main-card__subtitle {
+  font-size: 16px;
+}
+
+.main-card--info:not(:last-child) {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.card-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.trending-people:not(:last-child)  {
+  margin-bottom: 20px;
+}
+
+.trending-people img {
+  border-radius: 50px;
 }
